@@ -1,0 +1,6 @@
+<main class="container">
+  <div id="calculator">
+    <app-display-calculator [number]="number" [register]="register" (numberUpdated)="updateNumber($event)"></app-display-calculator>
+    <app-buttons-calculator (numberUpdated)="updateNumber($event)" (registerUpdated)="updateRegister($event)"></app-buttons-calculator>
+  </div>
+</main>

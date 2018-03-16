@@ -1,0 +1,47 @@
+<header class="top-part">
+  <div class="top">
+    <h5 class="branding">Calculator</h5>
+    <div class="window">
+      <div class="minimize button" role="button">
+        <img class="icon icons8-Minus-Math-" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAARElEQVRYR+3V0Q0AMAQFQPYfuh1A+ql8nAF4LhIZw5XD80MAAgQIECCwVuA0fcmy8EtgPEATQG279gYIECBAgACBbwIXi38CITaYSB4AAAAASUVORK5CYII=">
+      </div>
+      <div class="maximize button" role="button">
+        <img class="icon icons8-Rectangle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAU0lEQVRYR+3WIQIAIAhDUbj/oTVpkIBlzvA9gJtPAhnmk+b8oAACp8B4NJQ799sCqtlYwq0ABRBAAAEEEEDALqBejNp9wFZAHVzuV/319UMogMAEOqwkIXyG1okAAAAASUVORK5CYII=">
+      </div>
+      <div class="close button" role="button">
+        <img class="icon icons8-Multiply" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABBUlEQVRYR+2W6w3CMAyErxuwCYwAG7AJjAATMQKMUDZhBHQSQaFqYp8DqpDSn2nj+3J+NAMWfoaF9dEBugN/4cAewA3AQ+yYFYADgHNtn+UAxS8ARgA7AYLiVwCbF8CpBGEBMBBPvxYgcvE7gG0N3AIguAIhiTO4B8ALIYsrABZESFwFKEFwPRWcmfNpMXpTkO+b1gTfsdpl8YgDCSSH4FpIvBUg2c446px4OxpNQZ5zBlPmxEcZqABz1c6A6rAKOVBrNWVYhRzw9HkIwpMCj/hcd7gK0wJQxEMQFkD6Hat9nqeD94Hw75inarmQHGviLYNIvByVP7dS8DWh6I2oA3QHfu7AEzfHWCF+OOmJAAAAAElFTkSuQmCC">
+      </div>
+    </div>
+  </div>
+  <div class="type">
+    <div class="column menu">
+      <div class="calculator-menu button-top" role="button">
+        <img class="icon icons8-Menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAATElEQVRYR+3TsQ0AMAgDQdh/aFIj0ZKn+AyQOCc7Az4Jvx8GUOCkQC0vo316EsADLAP06092QAEF8BniAeyAAgrgM8QD2AEFFPgq8ACF3gYho2IK1QAAAABJRU5ErkJggg==">
+      </div>
+      <label class="calculator-chosen">STANDARD</label>
+    </div>
+    <div class="column history">
+      <div class="button-top" role="button">
+        <img class="icon icons8-Past" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB4klEQVRYR+2W4U3DQAyFXyeAEWACygZsAEwAbFA2gAmACYAJgA1ggsIEMAJMAPqQXSXpxXfXRO2fWqoa5S7287PvnSfasE02HF9bALUM7Eo6k3RipTuy/3dJX5JeJb3Yc1F1SwEQ+EbSeZFX6UHSdQmQFIBfC+JrZHsvCRAYGRLg2zLm3dR+MAJDGOsXkp4j0DkAZExw7M0YgOrI9iTdSjq2TYAAcNIiAKeSnuwr6LxKeOiy1dwys7LxDl9JJiIAUAjtfcFxHAFg3UHga9/K0sojAuC0e6enKMwB4BsypxyPqSbOAegG7e4vAUBPfJojWGj10DoANFm4tAZdJFaqA31NXMIA3/pp4gi7iP37XBcAdGIuCcU8bGYzFoAUQ0X9khOijOYsjuGoAKDpwKjieQzzEnyYZIdN6Oc2lNBKVFVN6OqVFI7KwL7dkyo6hqFwrACgWoiIwe3FtQpyLpIhVi3FBAM1DbgjaYm2CjRezh/zyaXUskgHUCy/jnF0VxGYrStfx804zYEEKmGjZCBhfHPJrR5IuoniiJ6gHN4fDJ+cadcJzjnawdXtcyO081w9kqWYpieYiHzey1WDI0wJlmpe0wN9QGCETAFF1hhs+FhOxrkyhUqYy27U9aG34WAwWwB/XytsITVxIuMAAAAASUVORK5CYII=">
+      </div>
+    </div>
+  </div>
+  <div class="screen">
+    <div class="history-screen">
+      <input id="history" name="history" type="text" value="" [(ngModel)]="register" />
+    </div>
+    <div class="main-screen">
+      <input id="main" name="main" value="" type="text" [(ngModel)]="number" (keyup)="onKey($event)">
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="memory">
+      <div role="button">MC</div>
+      <div role="button">MR</div>
+      <div role="button">M+</div>
+      <div role="button">M-</div>
+      <div role="button">MS</div>
+      <div role="button">M&darr;</div>
+    </div>
+  </div>
+</header>
